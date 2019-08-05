@@ -19,9 +19,9 @@ def _get_disk_dict():
 
 
 def get_disks_occupy():
-    diskpre = _get_disk_dict()
+    disk_pre = _get_disk_dict()
     time.sleep(INTERVALS / 1000.0)
-    diskcur = _get_disk_dict()
-    for keys in diskpre:
-        diskcur[keys].set_disk_occupy(diskpre[keys])
-    return diskcur.values()
+    disk_cur = _get_disk_dict()
+    for keys in disk_pre:
+        disk_cur[keys].set_disk_occupy(disk_pre[keys])
+    return disk_cur.values()
