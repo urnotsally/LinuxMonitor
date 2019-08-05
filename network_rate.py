@@ -6,6 +6,7 @@ INTERVALS = 500  # ms
 net_ntuple = namedtuple('net', 'interface, recv_bytes, transmit_bytes, time')
 rate_ntuple = namedtuple('net_rate', 'interface, recv_rate, transmit_rate')
 
+
 def _get_eth_dict():
     eth_dict = {}
     with open(FILEPATH) as f:

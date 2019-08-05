@@ -2,7 +2,6 @@
 import cpu_occupy
 import memory_occupy
 import cpu_load
-from disk_iops import *
 from network_rate import *
 import disk_usage
 

@@ -1,5 +1,5 @@
 import time
-from bean.proc_diskstats import DiskStatsBean
+from unused.proc_diskstats import DiskStatsBean
 
 FILEPATH = "/proc/diskstats"
 INTERVALS = 500  # ms
