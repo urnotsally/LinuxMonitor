@@ -18,5 +18,5 @@ def _get_mem():
 def get_mem_occupy():
     memory = _get_mem()
     used = memory.memtotal - memory.memavailable
-    occupy = round(float(used) / memory.memtotal,2)
+    occupy = round(float(used) / memory.memtotal, 2)
     return occupy
