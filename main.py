@@ -16,7 +16,7 @@ if __name__ == '__main__':
         print "[cpu_load] 1min 5min 15mim: %s %s %s" % (load.one, load.five, load.fifteen)
         print "[network_speed]"
         for item in network_rate.get_net_rate():
-            print "%s recv: %.2f Kb/s ; trans: %.2f Kb/s" % (item.interface, item.recv_rate, item.transmit_rate)
+            print "%s recv: %.2f KB/s ; trans: %.2f KB/s" % (item.interface, item.recv_rate/1000, item.transmit_rate/1000)
         print "[disk_usage]"
         for dev in disk_usage.disk_partitions():
             usage = disk_usage.disk_usage(dev.mountpoint)
